@@ -22,5 +22,5 @@ ADD app.js gulpfile.js package.json ./
 RUN echo "Asia/Kolkata" > /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata
 
 VOLUME ['./tmp']
- 
-EXPOSE 3010
+
+CMD ["gulp"]
