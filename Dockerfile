@@ -13,7 +13,6 @@ WORKDIR /data/artifact/
 ADD node_modules node_modules
 ADD models models
 ADD html html
-ADD test test
 ADD routes routes
 ADD app.js gulpfile.js package.json ./
 
