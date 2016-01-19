@@ -14,6 +14,8 @@ ADD node_modules node_modules
 ADD models models
 ADD html html
 ADD routes routes
+ADD jshint-report jshint-report
+ADD mocha-report mocha-repot
 ADD app.js gulpfile.js package.json ./
 
 #Setting timezone to match time zone of sonar server
