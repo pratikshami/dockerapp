@@ -1,0 +1,21 @@
+machine:
+  node:
+    version: 0.11.8
+    
+test:
+  override:
+    - mocha
+  post:
+    - echo "$CIRCLE_ARTIFACTS"
+    
+    
+deployment:
+  dockerhub:
+     branch: master
+     commands:
+         - mkdir ${CIRCLE_ARTIFACTS}/nodemod
+         - zip nodemodules.zip ./node_modules/
+         - cp -R ./nodemodules.zip ${CIRCLE_ARTIFACTS}/nodemod/
+         - $DOCKERTRIGGER
+
+         - ls $CIRCLE_ARTIFACTS
