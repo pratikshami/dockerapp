@@ -7,7 +7,7 @@ dependencies:
     - npm install
 test:
   override:
-    - gulp gulpfile.js
+    - gulp 
     
   post:
     - echo "$CIRCLE_ARTIFACTS"
