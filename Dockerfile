@@ -16,7 +16,7 @@ ADD html html
 ADD routes routes
 ADD jshint-report jshint-report
 ADD mocha-report mocha-repot
-ADD app.js gulpfile.js package.json ./
+ADD app.js gulpfile.js circle.yml package.json ./
 
 #Setting timezone to match time zone of sonar server
 RUN echo "Asia/Kolkata" > /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata
