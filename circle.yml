@@ -5,7 +5,7 @@ machine:
     
 test:
   override:
-    - mocha
+    - gulp
   post:
     - echo "$CIRCLE_ARTIFACTS"
     
