@@ -6,9 +6,10 @@ machine:
   node:
     version: v0.10.33
 
-dependencies:  
-      -npm install
-test:  
-    - gulp
-    
+dependencies:
+  override:
+    - npm install
+test:
+  override:
+    - gulp 
     
