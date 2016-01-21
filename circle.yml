@@ -1,0 +1,16 @@
+machine:  
+  environment:
+    PATH: ${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin
+    NODE_ENV: test
+    TZ: Europe/Prague
+  node:
+    version: v0.10.33
+
+dependencies:  
+  override:
+      -npm install
+test:  
+  override:
+    - gulp
+    
+    
