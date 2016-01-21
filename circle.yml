@@ -1,11 +1,14 @@
 machine:
   node:
     version: 0.11.8
- 
     
+dependencies:
+  override:
+    - npm install
 test:
   override:
-    - gulp
+    - gulp gulpfile.js
+    
   post:
     - echo "$CIRCLE_ARTIFACTS"
     
