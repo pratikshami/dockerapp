@@ -7,7 +7,7 @@ dependencies:
     - npm install
 test:
   override:
-    - gulp 
+    - gulp buildtask
     
   post:
     - echo "$CIRCLE_ARTIFACTS"
