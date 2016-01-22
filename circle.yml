@@ -4,6 +4,7 @@ machine:
     
 dependencies:
   override:
+    - npm install gulp
     - npm install
 test:
   override:
